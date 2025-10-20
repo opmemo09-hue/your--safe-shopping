@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Awaits - Epic Travel Gear & Tips</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #333; line-height: 1.6; }
+        header { background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); color: white; text-align: center; padding: 40px 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+        .hero { position: relative; height: 500px; background: url('https://via.placeholder.com/1200x500?text=Stunning+Mountain+Adventure') center/cover no-repeat; display: flex; align-items: center; justify-content: center; text-align: center; color: white; }
+        .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.4); }
+        .hero-content { position: relative; z-index: 1; animation: fadeIn 2s ease-in; }
+        .hero h1 { font-size: 3em; margin: 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.7); }
+        .hero p { font-size: 1.5em; margin: 10px 0; }
+        .cta-button { background: #ff6b6b; color: white; padding: 15px 30px; text-decoration: none; border-radius: 50px; font-weight: bold; transition: all 0.3s; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+        .cta-button:hover { background: #ff5252; transform: translateY(-5px); box-shadow: 0 6px 15px rgba(0,0,0,0.4); }
+        
+        section { padding: 60px 20px; max-width: 1200px; margin: 0 auto; background: white; border-radius: 10px; margin-top: -50px; position: relative; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .product { border: 1px solid #eee; padding: 20px; border-radius: 10px; text-align: center; transition: transform 0.3s, box-shadow 0.3s; background: #f9f9f9; }
+        .product:hover { transform: translateY(-10px); box-shadow: 0 10px 25px rgba(0,0,0,0.2); }
+        .product img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; }
+        .rating { color: #ffd700; font-size: 1.2em; margin: 10px 0; }
+        .testimonial { background: #e8f5e8; padding: 20px; border-radius: 10px; margin: 20px 0; font-style: italic; }
+        .disclosure { background: #fff3cd; padding: 15px; border-radius: 5px; margin: 20px 0; font-size: 0.9em; }
+        
+        footer { text-align: center; padding: 20px; background: #333; color: white; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .fade-in { animation: fadeIn 1s ease-in; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Adventure Awaits</h1>
+        <p>Unlock Epic Journeys with Gear That Delivers</p>
+    </header>
+    
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Ready for Your Next Adventure?</h1>
+            <p>Discover top-rated travel gear that makes every trip unforgettable. Save time, stay safe, and capture memories!</p>
+            <a href="#products" class="cta-button">Explore Gear Now</a>
+        </div>
+    </div>
+    
+    <section id="products" class="fade-in">
+        <h2 style="text-align: center; color: #667eea;">Must-Have Travel Essentials</h2>
+        <p style="text-align: center;">Why wait? These products are flying off the shelves—grab yours before they're gone!</p>
+        
+        <div class="products">
+            <div class="product">
+                <img src="backback.jpg" alt="Image of an ultimate waterproof backpack" width="400" height="300">
+
+                <h3>Ultimate Waterproof Backpack</h3>
+                <div class="rating">★★★★★ (4.8/5 from 1,200+ travelers)</div>
+                <p>Carry your world effortlessly! Durable, spacious, and weatherproof—perfect for hikes or city escapes. Save hours packing and enjoy worry-free adventures.</p>
+                <p><strong>Limited Stock Alert:</strong> Only a few left at this price!</p>
+                <a href="https://www.amazon.com/dp/B08N5WRWNW?tag=yourassociateid" class="cta-button" target="_blank">Shop Now & Save 20%</a>
+            </div>
+            
+            <div class="product">
+                <img src="4K Action Camera.jpg" alt="Image of a 4K Action Camera" width="400" height="300">
+
+                <h3>4K Action Camera</h3>
+                <div class="rating">★★★★★ (4.9/5 from 800+ reviewers)</div>
+                <p>Capture stunning 4K videos and photos on the go! Waterproof, lightweight, and easy to mount. Don't miss out on life's best moments—upgrade your travel photography today.</p>
+                <p><strong>Exclusive Deal:</strong> Free shipping on orders over $50!</p>
+                <a href="https://www.amazon.com/dp/B07ZPKZSSC?tag=yourassociateid" class="cta-button" target="_blank">Get Yours Now</a>
+            </div>
+            
+            <div class="product">
+                <img src="Memory foam pillow.jpg" alt=Image of a Memory foam travel pillow" width="400" height="300">
+
+                <h3>Memory Foam Travel Pillow</h3>
+                <div class="rating">★★★★★ (4.7/5 from 500+ happy campers)</div>
+                <p>Sleep soundly on long flights or road trips! Adjustable, neck-supporting design for ultimate comfort. Travelers rave: "This changed my journeys!"</p>
+                <p><strong>Customer Favorite:</strong> Over 90% recommend it!</p>
+                <a href="https://www.amazon.com/dp/B08L8ZJ4Z4?tag=yourassociateid" class="cta-button" target="_blank">Buy & Relax</a>
+            </div>
+        </div>
+        
+        <div class="testimonial">
+            <p>"This backpack saved my 2-week trek! Highly recommend for any adventurer." – Sarah T., Verified Buyer</p>
+        </div>
+        
+        <div class="disclosure">
+            <strong>Affiliate Disclosure:</strong> As an Amazon Associate, I earn from qualifying purchases. All opinions are my own, and links are for your convenience. Secure purchases guaranteed through Amazon.
+        </div>
+        
+        <h2 style="text-align: center;">Why Choose Our Recommendations?</h2>
+        <ul style="list-style: none; padding: 0; text-align: center;">
+            <li>✅ Tested by real travelers like you</li>
+            <li>✅ Top-rated for quality and value</li>
+            <li>✅ Fast, free shipping options</li>
+        </ul>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Adventure Awaits. Gear up for greatness! | <a href="#" style="color: #ff6b6b;">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
